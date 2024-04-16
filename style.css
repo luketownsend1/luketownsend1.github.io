@@ -1,42 +1,84 @@
-*{
-margin: 0;
-padding: 0;
-font-family: "Geologica", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Geologica", sans-serif;
+  
+}
 
-background-color: rgb(30, 30, 30);
+body {
+  background-color: #111112;
+  
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  color: #ff3a3a;
+  font-family: "Geologica", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  color: #bbbbbb;
+}
+
+#hotbar {
+  size: 100vw, 10;
+  background-color: #222223;
+  color: #ff3a3a;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
 #banner {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('resources/ferrari.png');
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 200;
 }
 
 #bannerLogo {
   width: 40vmin;
 }
 
-.geologica-defaulttext {
-    font-family: "Geologica", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0,
-      "CRSV" 0,
-      "SHRP" 0;
-  }
+.ibm-plex mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
-.geologica-title {
-    font-family: "Geologica", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-variation-settings:
+.geologica-defaulttext {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #bbbbbb;
+  font-variation-settings:
     "slnt" 0,
     "CRSV" 0,
     "SHRP" 0;
 }
 
+.geologica-title geoTitle {
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #ff3a3a;
+
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0,
+    "SHRP" 0;
+}
