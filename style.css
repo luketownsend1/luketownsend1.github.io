@@ -6,6 +6,18 @@ font-family: "Geologica", sans-serif;
 background-color: rgb(30, 30, 30);
 }
 
+#banner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bannerLogo {
+  width: 40vmin;
+}
+
 .geologica-defaulttext {
     font-family: "Geologica", sans-serif;
     font-optical-sizing: auto;
