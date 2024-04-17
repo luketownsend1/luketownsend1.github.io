@@ -5,8 +5,28 @@
   
 }
 
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#textContent {
+  margin: 2vw;
+}
+
 body {
-  background-color: #111112;
+  background-color: #151519;
   
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -17,23 +37,43 @@ header {
   color: #ff3a3a;
   font-family: "Geologica", sans-serif;
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
+  padding-bottom: 3vh;
 }
 
 p {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   color: #bbbbbb;
+  padding-bottom: 1vh;
 }
 
-#hotbar {
-  size: 100vw, 10;
-  background-color: #222223;
+#navbar {
+  width: 100vw;
+  height: 7vh;
+  background-color: #22222388;
   color: #ff3a3a;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  row-gap: 2vh;
+  overflow: hidden;
+  
 
+}
+
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #ff5252;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+#hotbarLogo {
+  width: 7vmin;
 }
 
 #banner {
