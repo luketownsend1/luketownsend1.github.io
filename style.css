@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: #151519;
+  background-color: #151515;
   
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -51,7 +51,7 @@ p {
 #navbar {
   width: 100vw;
   height: 7vh;
-  background-color: #22222388;
+  background-color: #22222288;
   color: #ff3a3a;
   display: flex;
   justify-content: space-evenly;
@@ -72,13 +72,9 @@ p {
   text-decoration: none;
 }
 
-#hotbarLogo {
-  width: 7vmin;
-}
-
 #banner {
   width: 100vw;
-  height: 50vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +82,7 @@ p {
   background-size: cover;
   background-position-x: center;
   background-position-y: 200;
+  color: #ff0000;
 }
 
 #bannerLogo {
