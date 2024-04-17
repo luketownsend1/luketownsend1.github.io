@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: #151515;
+  background-image: linear-gradient(to bottom right, #4f0000, #1e0000);
   
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -34,11 +34,16 @@ body {
 }
 
 header {
-  color: #ff3a3a;
+  color: #ff0000;
   font-family: "Geologica", sans-serif;
   font-weight: 500;
   font-style: normal;
   padding-bottom: 3vh;
+}
+
+h1 {
+  stroke: #00000044;
+  stroke-width: 5px;
 }
 
 p {
@@ -46,13 +51,14 @@ p {
   font-weight: 400;
   color: #bbbbbb;
   padding-bottom: 1vh;
+  size: 2vh;
 }
 
 #navbar {
   width: 100vw;
   height: 7vh;
   background-color: #22222288;
-  color: #ff3a3a;
+  color: #ff0000;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -66,10 +72,11 @@ p {
 #navbar a {
   float: left;
   display: block;
-  color: #ff5252;
+  color: #ff0000;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  size: 4vh;
 }
 
 #banner {
@@ -112,7 +119,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  color: #ff3a3a;
+  color: #ff0000;
 
   font-variation-settings:
     "slnt" 0,
