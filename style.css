@@ -27,7 +27,8 @@
   margin: 0;
   padding: 0;
   font-family: "HNMedium", sans-serif;
-  
+  scrollbar-color: #4a4a4a;
+  scroll-behavior: auto;
 }
 
 .halftransparent {
@@ -65,6 +66,10 @@
 
 .textContent {
   margin: 2vw;
+}
+
+.navbar-toggler-icon {
+  background-image: url(logos/hamburger.svg);
 }
 
 .title {
@@ -119,13 +124,23 @@ button {
     2px 2px 10px #000000cc;
 }
 
+.onTop {
+  z-index: 5;
+  transform: translateY(-50vh);
+}
+
+.w-100 {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
 .navbar {
   backdrop-filter: blur(10px);
-  line-height: 1.5;
   background-color: #00000044;
   color: #ffffff;
+  overflow: visible;
   padding: 10px;
-  
 }
 
 .nav-link, #homelink {
@@ -141,6 +156,7 @@ button {
 .navbar-toggler {
   border: none;
   font-size: 1.25rem;
+  
   
 }
 
@@ -161,11 +177,10 @@ button {
 }
 
 #banner {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   background-size: cover;
-  background-image: url("cars/gt.png");
   background-position-x: center;
   background-position-y: 200;
   flex-direction: column;
