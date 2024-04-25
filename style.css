@@ -6,6 +6,7 @@
 body {
     background-color: #333333;
     color: #ffffff;
+    font-family: "Lexend", sans-serif;
 }
 
 .navcard {
@@ -23,7 +24,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-}
+    height: 75vh;
+    box-shadow: inset 0 -10vh 5vh -5vh #333333ff;}
 
 .navcard a {
     color: #ffffff;
@@ -99,11 +101,9 @@ body {
 
 #footer {
     background-color: #222222;
-    height: 10vh;
-    width: 100%;
     padding: 2.5vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -113,9 +113,13 @@ body {
     text-decoration: none;
 }
 
+#footer p {
+    padding-top: 1vh;
+}
+
 #footerlogo {
     height: 5vh;
-    padding-right: 2.5vw;
+    padding-bottom: 2.5vh;
 }
 
 .content {
@@ -126,10 +130,137 @@ body {
 .page {
     display: none;
     transition: all, 0.5s ease-in-out;
+
 }
 .active {
     display: block;
     transition: all, 0.5s ease-in-out;
+}
+
+.card {
+    border-radius: 50px;
+    box-shadow: inset 0 0 50px #00000088;
+    height: 20vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#CAD {
+    background-image: url(images/onshapescreenshot.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.card h1 {
+    padding-bottom: 5vh;
+}
+
+.card.title {
+    font-size: large;
+}
+
+.card.bodytext {
+    font-size: small;
+}
+
+.bottompad {
+    padding-bottom: 5vh;
+}
+
+.rightpad {
+    padding-right: 5vw;
+}
+
+.cardgroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-decoration: none;
+    transition: all, 0.25s ease-in-out;
+}
+
+.list a {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: x-large;
+    text-decoration: none;
+    transition: all, 0.25s ease-in-out;
+    padding: 5vh;
+    justify-content: center;
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
+}
+
+.list a:hover {
+    color: #A94343;
+    font-weight: 900;
+    font-size: xx-large;
+    text-decoration: none;
+    transition: all, 0.25s ease-in-out;
+    filter: grayscale(0%);
+}
+
+button {
+    line-height: 3;
+    border-radius: 500px;
+    border-width: 0px;
+    color: #ffffff;
+    font-family: "Luxend", sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    transition: all, 0.25s ease-in-out;
+}
+
+button.emphasized {
+    background-color: #A94343DD;
+    transition: all, 0.25s ease-in-out;
+}
+
+button.emphasized:hover {
+    background-color: #6d2323dd;
+    transition: all, 0.25s ease-in-out;
+}
+
+button.expanded {
+    width: 100%;
+}
+
+#car {
+    background-image: url(cars/gtcolor.png);
+}
+
+#game {
+    background-image: url(images/reach.jpg);
+}
+
+#cad {
+    background-image: url(images/onshapescreenshot.png);
+}
+
+#design {
+    background-image: url(images/blueprint.png);
+}
+
+.preview-container {
+    width: 90vw;
+    height: 100vh;
+
+}
+
+.preview-iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -140,10 +271,8 @@ body {
     
     */
 
-    .navcard {
-        align-items: center;
-        justify-content: center;
-        height: 40vh;
+    .cardgroup {
+        flex-direction: column;
     }
 
     .branding #logo{
@@ -153,4 +282,49 @@ body {
     .hideOnSmall {
         display: none;
     }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* 
+    
+    SETTINGS FOR SMALL SCREENS
+    
+    */
+
+    .navcard {
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+}
+
+
+
+/* 
+
+SCROLLBAR SETTINGS
+
+*/
+
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+    width: 1.5vw; /* Width of the scrollbar */
+}
+
+/* Track (the area on which the thumb drags) */
+::-webkit-scrollbar-track {
+    background: #77777788; /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #433; /* Color of the scrollbar handle */
+    transition: all, 0.25s ease-in-out ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #612626; /* Color of the scrollbar handle on hover */
+    transition: all, 0.25s ease-in-out ;
 }

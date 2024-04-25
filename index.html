@@ -15,39 +15,62 @@
   <body>  
 
     <div class="navcard">
-        <div class="branding">
-            <img src="newlogos/LTnormal.svg" id="logo" alt="">
-            <p class="hideOnSmall">Luke Townsend</p>
-        </div>
-        
-        <div id="expressiveHeader">
-            <p class="rightSpace">Lover of: </p>
-            <p class="" id = "likedThingsCarousel">Loading Personality...</p>
-        </div>
-
-        <a class="active" href="#" onclick="showPage('Home')">Home</a>
-        <a class="" href="#" onclick="showPage('Resume')">Resume</a>
-        <a class="" href="#" onclick="showPage('Hobbies')">Hobbies</a>
-        <a class="" href="#" onclick="showPage('Links')">Links</a>
+      <div class="branding">
+        <img src="newlogos/LTnormal.svg" id="logo" alt="">
+        <p class="hideOnSmall">Luke Townsend</p>
+      </div>
     
+      <div id="expressiveHeader">
+        <p class="rightSpace">Lover of: </p>
+        <p class="" id = "likedThingsCarousel">Loading Personality...</p>
+      </div>
+
+      <a class="active" href="#" onclick="showPage('Home')">Home</a>
+      <a class="" href="#" onclick="showPage('Resume')">Resume</a>
+      <a class="" href="#" onclick="showPage('Hobbies')">Hobbies</a>
+      <a class="" href="#" onclick="showPage('Links')">Links</a>
     </div>
 
     <div class="content">
       <div id="Home" class="page active">
           <div class="change-page">
-              <h1>Welcome to the Home Page</h1>
-              <p>This is the home page content.</p>
+            <h1 class="bottompad">Hi! I'm Luke Townsend, a: </h1>
+            
+            <div class="list">
+              <a class="smolcard" id="game" href="https://www.halowaypoint.com/" target="_blank">Gamer</a>
+              <a class="smolcard" id="design" href="https://www.figma.com/" target="_blank">Graphic Designer</a>
+              <a class="smolcard" id="cad" href="https://www.onshape.com/en/" target="_blank">CAD Modeller</a>
+              <a class="smolcard" id="gun" href="https://iwi.us/" target="_blank">Gun Enthusiast</a>
+              <a class="smolcard" id="car" href="https://www.koenigsegg.com/home" target="_blank">Car Nerd</a>
+            </div>
+            
+              
           </div>
       </div>
       <div id="Resume" class="page">
           <div class="change-page">
-              <h1>Resume</h1>
+              <h1 class="bottompad">Resume:</h1>
+              <div class="preview-container bottompad">
+                <iframe class="preview-iframe" src="others/Resume.pdf"></iframe>
+              </div>
+              
+              <button class="emphasized expanded" onclick="openInNewTab('https://docs.google.com/document/d/1q6w57SNooAH9p75hoTR-4DvNFPICssmt1FCIIEg3FCg/edit?usp=sharing')">Open in new tab</button>
           </div>
       </div>
       <div id="Hobbies" class="page">
           <div class="change-page">
-              <h1>Hobbies</h1>
-              <p>This is the services page content.</p>
+              <h1 class="bottompad">Hobbies</h1>
+              <div class="cardgroup bottompad">
+                <a href="https://www.printables.com/@Ace_1566675" target="_blank" class="card" id="CAD">
+                  <h3 class="title">CAD Designer</h3>
+                  <p class="bodytext">CAD (Computer Aided Design) is really cool. I use CAD for making models to print for personal projects or for robotics.</p>
+                </a>
+                
+                <a href="https://www.halowaypoint.com/" target="_blank" class="card" id="Gamer">
+                  <h3 class="title">Gamer</h3>
+                  <p class="bodytext">I really like video games. Some of my favorites are Halo, Titanfall, and Destiny.</p>
+                </a>
+              </div>
           </div>
       </div>
       <div id="Links" class="page">
@@ -63,6 +86,8 @@
     <img id = "footerlogo" src="newlogos/monoLightRed.svg" alt="">
 
     <a href="https://www.youtube.com/watch?v=thOifuHs6eY&t" target="_blank">Hexagons are the bestagons.  ;)</a>
+
+    <p>Luke Townsend | 2024</p>
 
   </div>
     
