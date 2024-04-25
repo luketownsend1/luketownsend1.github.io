@@ -1,205 +1,119 @@
-@font-face {
-  font-family: "HNBold";
-  src: url(fonts/HelveticaNeueBold.otf);
-}
-
-@font-face {
-  font-family: "HNHeavy";
-  src: url(fonts/HelveticaNeueHeavy.otf);
-}
-
-@font-face {
-  font-family: "HNLight";
-  src: url(fonts/HelveticaNeueLight.otf);
-}
-
-@font-face {
-  font-family: "HNMedium";
-  src: url(fonts/HelveticaNeueMedium.otf);
-}
-
-@font-face {
-  font-family: "HNThin";
-  src: url(fonts/HelveticaNeueThin.otf);
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "HNMedium", sans-serif;
-  scrollbar-color: #4a4a4a;
-  scroll-behavior: auto;
-}
-
-.halftransparent {
-  opacity: 0.5;
-}
-
-.backgroundContainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
-  
-}
-
-.center {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.landingBackgrounds {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.showing {
-  opacity: 1;
-}
-
-.textContent {
-  margin: 2vw;
-}
-
-.navbar-toggler-icon {
-  background-image: url(logos/hamburger.svg);
-}
-
-.title {
-  font-family: "HNLight", sans-serif;
-  color: #FF3E3E;
-  font-style: normal;
-}
-
-.text {
-  font-family: "JetBrains Mono", monospace;
-  color: #ffffff;
-  font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: #292929;
-  
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 400;
+    background-color: #333333;
+}
+
+.navcard {
+    padding: 5vw;
+    background-image: url(cars/Jesko.png);
+    background: linear-gradient(to right, #00000088, #00000088), url('cars/Jesko.png');
+    background-position: center;
+    background-color: #00000088;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: x-large;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.navcard a {
+    color: #ffffff;
+    font-size: x-large;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    transition: all, 0.25s ease-in-out;
+    text-decoration: none;
+    padding-bottom: 2.5vh;
+}
+
+.navcard .activeheader {
+    color: #A94343;
+    font-size: x-large;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    transition: all, 0.25s ease-in-out;
+    text-decoration: none;
+    padding-bottom: 2.5vh;
+}
+
+.navcard a:hover {
+    color: #ffaaaa;
+    font-size: x-large;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.branding #logo {
+    height: 100px;
+    padding-right: 5vh;
+}
+
+.branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    font-size: large;
+    padding-bottom: 2.5vh;
+}
+
+#expressiveHeader {
+    display: flex;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-size: medium;
+    flex-direction: row;
+    padding-bottom: 3vh;
+    transition: width, 0.25s ease-in-out;
+}
+
+#likedThingsCarousel {
+    transition: opacity 1s ease-in-out;
+}
+
+.rightSpace {
+    padding-right: 10px;
+}
+
+.lexend-default {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
 }
+@media screen and (max-width: 1000px) {
 
-button {
-  font-family: "JetBrains Mono", monospace;
-  color: #ffffff;
-  line-height: 2;
-  border-radius:10px;
-  padding: 0 10px;
-  font-size: 1rem;
-  text-align: center;
-}
+    /* 
+    
+    SETTINGS FOR SMALL SCREENS
+    
+    */
 
-.emphasized {
-  color: #fff;
-  background-color: #FF3E3Ee8;
-}
+    .navcard {
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+    }
 
-.lesser {
-  color: #ffffff;
-  border: 5px, solid, #ffffff, ;
-}
+    .branding #logo{
+        padding-right: 0;
+    }
 
-.shaded {
-  background-color: #00000088;
-}
-
-.stroke {
-  text-shadow:
-    -2px -2px 10px #000000cc,
-    2px -2px 10px #000000cc,
-    -2px 2px 10px #000000cc,
-    2px 2px 10px #000000cc;
-}
-
-.onTop {
-  z-index: 5;
-  transform: translateY(-50vh);
-}
-
-.w-100 {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-}
-
-.navbar {
-  backdrop-filter: blur(10px);
-  background-color: #00000044;
-  color: #ffffff;
-  overflow: visible;
-  padding: 10px;
-}
-
-.nav-link, #homelink {
-  color: #ffffff;
-  font-family: "HNLight";
-}
-
-.nav-link:hover, #homelink:hover {
-  color: #FF3E3E;
-  font-family: "HNMedium";
-}
-
-.navbar-toggler {
-  border: none;
-  font-size: 1.25rem;
-  
-  
-}
-
-.navbar-toggler:focus, .btn-close:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-.navbar-brand {
-  height: 5vh;
-}
-
-#navbar a {
-  font-family: "HNLight", sans-serif;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-}
-
-#banner {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: 200;
-  flex-direction: column;
-  color: #FF3E3Ebc;
-}
-
-#bannercontent {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#bannerLogo {
-  width: 40vmin;
-}
-
-#hotbarlogo {
-  height: 3vh;
+    .hideOnSmall {
+        display: none;
+    }
 }
