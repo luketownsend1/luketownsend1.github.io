@@ -25,41 +25,46 @@
             <p class="" id = "likedThingsCarousel">Loading Personality...</p>
         </div>
 
-        <a class="activeheader" href="">Home</a>
-        <a class="" href="">Resume</a>
-        <a class="" href="hobbies.html">Hobbies</a>
-        <a class="" href="">Contact Me</a>
+        <a class="active" href="#" onclick="showPage('Home')">Home</a>
+        <a class="" href="#" onclick="showPage('Resume')">Resume</a>
+        <a class="" href="#" onclick="showPage('Hobbies')">Hobbies</a>
+        <a class="" href="#" onclick="showPage('Links')">Links</a>
     
     </div>
 
     <div class="content">
-      <div id="home" class="page active">
+      <div id="Home" class="page active">
           <div class="change-page">
               <h1>Welcome to the Home Page</h1>
               <p>This is the home page content.</p>
           </div>
       </div>
-      <div id="about" class="page">
+      <div id="Resume" class="page">
           <div class="change-page">
-              <h1>About Us</h1>
-              <p>This is the about us page content.</p>
+              <h1>Resume</h1>
           </div>
       </div>
-      <div id="services" class="page">
+      <div id="Hobbies" class="page">
           <div class="change-page">
-              <h1>Our Services</h1>
+              <h1>Hobbies</h1>
               <p>This is the services page content.</p>
           </div>
       </div>
-      <div id="contact" class="page">
+      <div id="Links" class="page">
           <div class="change-page">
-              <h1>Contact Us</h1>
+              <h1>Links</h1>
               <p>This is the contact us page content.</p>
           </div>
       </div>
-  </div>
+    </div>
 
-  <div id="footer"></div>
+  <div id="footer">
+
+    <img id = "footerlogo" src="newlogos/monoLightRed.svg" alt="">
+
+    <a href="https://www.youtube.com/watch?v=thOifuHs6eY&t" target="_blank">Hexagons are the bestagons.  ;)</a>
+
+  </div>
     
     <script src="app.js"></script>
   </body>
