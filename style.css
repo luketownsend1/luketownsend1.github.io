@@ -125,6 +125,10 @@ body {
 .content {
     padding: 5vw;
     transition: all, 0.5s ease-in-out;
+    background-image: url(cars/lamborghini.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 10vh 5vh -5vh #333333ff;
 }
 
 .page {
@@ -211,6 +215,10 @@ body {
     filter: grayscale(0%);
 }
 
+.lift {
+    text-shadow: 0 0 10px #000000;
+}
+
 button {
     line-height: 3;
     border-radius: 500px;
@@ -238,10 +246,14 @@ button.expanded {
 
 #car {
     background-image: url(cars/gtcolor.png);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 #game {
     background-image: url(images/reach.jpg);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 #cad {
@@ -249,7 +261,11 @@ button.expanded {
 }
 
 #design {
-    background-image: url(images/blueprint.png);
+    background-image: url(newlogos/logos.svg);
+}
+
+#gun {
+    background-image: url(images/gunimage.png);
 }
 
 .preview-container {
